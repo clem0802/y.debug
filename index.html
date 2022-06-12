@@ -14,15 +14,21 @@
         <input id="firstNumber" placeholder="Type your first number" />
         <select id="operators">
             <option value="">Select an operator</option>
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-            <option value="%">%</option>
+            <option id="add" value="+">+</option>
+            <option id="sub" value="-">-</option>
+            <option id="mul" value="*">*</option>
+            <option id="div" value="/">/</option>
+            <option id="mod" value="%">%</option>
         </select>
         <input id="secondNumber" placeholder="Type your second number" />
         <button class="calculator-button" onclick="calculator()">Calculate</button>
+
+        <div class="result-container">
+            <h3>RESULT</h3>
+            <p class="number" id="result">?</p>
+        </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 

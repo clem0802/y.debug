@@ -1,5 +1,5 @@
 const operators = document.getElementById("operators");
-let currentOperator = ""
+let currentOperator = "";
 
 operators.addEventListener('change', function (events) {
     currentOperator = events.target.value;
@@ -11,22 +11,30 @@ function calculator() {
 
     switch (currentOperator) {
         case "+":
-            console.log(firstNumber + secondNumber)
+            addResult = firstNumber + secondNumber;
+            text = addResult;
             break;
         case "-":
-            console.log(firstNumber - secondNumber)
+            subResult = firstNumber - secondNumber;
+            text = subResult;
             break;
         case "*":
-            console.log(firstNumber * secondNumber)
+            mulResult = firstNumber * secondNumber;
+            text = mulResult;
             break;
         case "/":
-            console.log(firstNumber / secondNumber)
+            divResult = firstNumber / secondNumber;
+            text = divResult;
             break;
         case "%":
-            console.log(firstNumber % secondNumber)
+            modResult = firstNumber % secondNumber;
+            text = modResult;
         break;
         default:
             console.log("Invalid Operator")
             break;
     }
+
+    const output = document.getElementById("result").innerHTML = text;
 }
+

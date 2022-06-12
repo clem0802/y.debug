@@ -6,6 +6,7 @@
     --primary: #FF5678;
     --secondary: #F6F2EF;
     --black: #262626;
+    font-family: 'Darker Grotesque', sans-serif;
   }
 
   body {
@@ -69,4 +70,18 @@
     font-weight: 800;
     font-size: 16px;
     padding: 4% 0;
+  }
+
+  .result-container {
+    background-color: rgb(245, 66, 66);
+    padding: 3%;
+    border-radius: 8px;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(94, 3, 3);
+  }
+  .number {
+    background-color: white;
+    border-radius: 12px;
+    margin: 2%;
   }
